@@ -1,0 +1,31 @@
+
+<%- include('header') -%>
+
+
+<div class="text-center center-div" id="login" style="background-color: #002147; height: 500px;">
+    <div class="container w-25  py-6">
+        <div class="title pb-5">
+            <h2 class="font-weight-bold" style="color: white; padding-top: 50px;">CarLog</h2>
+            <span style="color: white;">Log in for the existing user</span>
+            <% if(locals.logout){ %>
+                <div class="alter alert-success text-center">
+                    <%= logout %>
+                </div>
+            <% } %>
+        </div>
+        <form action="/route/login" method="POST" class="pt-3">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="E-mail address" name="email">
+                <small class="form-text text-muted text-left" style="color: white;">Register e-mail address</small>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+                <small class="form-text text-muted text-left" style="color: white;">Enter your password</small>
+            </div>
+            <button type="submit" class="btn  rounded-pill" style="width: 50%; margin-bottom: 20%; margin-top: 15%;  background-color: aqua;color: #002147;">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<%- include('footer') -%>

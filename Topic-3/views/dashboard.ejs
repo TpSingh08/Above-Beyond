@@ -1,0 +1,78 @@
+<%- include('header') -%>
+<style>
+    h6{
+        color: white;
+    }
+</style>
+<div class="text-center center-div" id="login" style="background-color: #002147;">
+    <div class="container w-40  py-1 " style="color: white;">
+        <h3 style="color: white; padding-top: 5%;">Welcome to CarLog Dashboard</h3>
+        <h5 style="color: white; padding-top: 5%;">Welcome <%= user.email %>!</h1>
+<div class="row" style="font-weight: 200px; padding-top: 8%; font-size: 20px; padding-left: 10%;">
+
+
+    <div class="col">
+    <img src="<%= car.img %>" alt="Car Image" style="width: 100%; max-width: 400px; height: auto; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.8);"/>
+</div>
+       <div class="col" style="text-align: left;"> 
+
+
+        <div>
+
+            <div class="row">
+                <div class="col">
+                    <h3>Brand</h3>
+                </div>
+                <div class="col">
+                    <p>
+                        <%= car.make %>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Model</h3>
+                </div>
+                <div class="col">
+                    <p>
+                        <%= car.model %>
+                    </p>
+                </div>
+            </div>
+            
+            
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <h3>Year</h3>
+                </div>
+                <div class="col">
+                    <p>
+                        <%= car.year %>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        
+
+</div>
+</div>
+
+
+<button type="submit" class="btn rounded-pill" style=" width: 30%; margin-bottom: 10%; margin-top: 5%; background-color: aqua;color: #002147;" ><a href="/route/logout">Logout</a></button>
+
+      
+        
+        
+    </div>
+</div>
+
+
+
+<%- include('footer') -%>

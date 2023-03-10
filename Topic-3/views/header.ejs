@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= locals.title ? title : 'Login System'  %></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="header.css">
+    <style>
+
+.navbar-brand{
+    
+    font-weight: bolder;
+    color: white;
+}
+
+.navbar{
+    background-color: #002147;
+    box-shadow: 2px 4px 12px rgba(0,0,0,0.6);  
+}
+ 
+.navbar-nav .nav-link {
+  color: red;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover {
+    color: #002147;
+}
+
+
+.navbar-nav .nav-item:hover {
+    transform: scale(1.2);
+   
+   
+}
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" >
+        <div class="container-fluid">
+            <!-- <img src="ff.png" alt="logo" >
+            <input type="image" src="ff.png" alt="Logo" style="width: 40px; padding-right: 5px; "> -->
+            <a class="navbar-brand" href="/">IoT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#expanded-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="expanded-nav">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active mx-2" href="/">IoT Applications</a>
+                    <a class="nav-item nav-link active mx-2" href="/">Smart Light</a>
+                    <a class="nav-item nav-link active mx-2" href="/">CarLog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+        
+    </body>
